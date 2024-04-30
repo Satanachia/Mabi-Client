@@ -1,0 +1,44 @@
+#pragma once
+#include "CoreMinimal.h"
+
+
+enum class PlayerActionType
+{
+	NONE = -1,
+	Skill_Metro,
+	Skill_Rush,
+	Skill_Blink,
+	Portion_HP,
+	LargePortion_HP,
+	COUNT
+};
+
+enum PlayerStateType
+{
+	PLAYER_STATE_IDLE,
+	PLAYER_STATE_MOVE,
+	PLAYER_STATE_ATTACK,
+	PLAYER_STATE_SKILL,
+
+	PLAYER_STATE_COUNT
+};
+
+enum PlayerInputType
+{
+	INPUT_LEFT_CLICK,
+	INPUT_RIGHT_CLICK,
+	INPUT_MOUSE_MOVE,
+	INPUT_MOUSE_WHEEL_UP,
+	INPUT_MOUSE_WHEEL_DOWN,
+	INPUT_KEY_NUM_1,
+	INPUT_KEY_NUM_2,
+	INPUT_KEY_NUM_3,
+	INPUT_KEY_NUM_4,
+	INPUT_KEY_NUM_5,
+	INPUT_KEY_K,
+	INPUT_KEY_I,
+	INPUT_COUNT
+};
+
+#define NET_CREATURE_MOVE_DURATION 0.2f
+#define NET_PROJECTILE_MOVE_DURATION 0.1f
